@@ -1,0 +1,16 @@
+<table>
+<thead>
+	<tr>
+		<th>Nombre</th>
+		<th>Duracion</th>
+		<th>Precio</th>
+	</tr>
+</thead>
+<tbody th:each="curso : ${cursos}">
+<tr>
+	<td th:text="${curso.nombre}"></td>
+	<td th:text="${curso.duracion_horas}"></td>
+	<td th:text="${curso.precio}"></td>
+</tr>
+</tbody>
+</table>
