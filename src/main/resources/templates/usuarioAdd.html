@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form th:action="@{usuario/register}" th:object="${usuario}" method="POST">
+<form th:action="@{/usuario/register}" th:object="${usuario}" method="POST">
 	Nickname: <input type="text" th:field="*{nickname}"/><br/>
 	Password: <input type="text" th:field="*{password}"/><br/>
 	Email: <input type="text" th:field="*{email}"/><br/>

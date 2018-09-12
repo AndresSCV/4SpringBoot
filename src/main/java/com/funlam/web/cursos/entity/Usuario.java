@@ -22,7 +22,6 @@ public class Usuario {
 	}
 
 	public Usuario(int id, String nickname, String password, String email) {
-		super();
 		this.id = id;
 		this.nickname = nickname;
 		this.password = password;

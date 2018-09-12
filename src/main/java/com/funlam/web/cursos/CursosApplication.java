@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CursosApplication {
 
 	public static void main(String[] args) {
-		System.out.println("localhost:8080/curso/");
 		SpringApplication.run(CursosApplication.class, args);
+		for (int i=0; i < 5; i++) {
+
+			System.out.println("-----------------------------------");
+		}
+		System.out.println("localhost:8080/curso/");
 	}
 }
