@@ -24,4 +24,10 @@ public class UsuarioRestController {
 	public List<Usuario> consultar() {
 		return usuarioJpa.findAll();
 	}
+	
+	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public Usuario crear(Usuario usuario) {
+		usuarioJpa.save(usuario);
+		return usuario;
+	}
 }
